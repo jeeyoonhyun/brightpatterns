@@ -1,18 +1,18 @@
 body {
     overflow:hidden;
+    font-family: 'Nanum Gothic Coding', monospace;
 }
 .aTarget {
     width: 300px;
 }
 .intro {
-    font-family: 'GulimChe', sans-serif;
+
     font-size: 3rem;
     color: #000000;
 }
 input {
     transition: all 1s;
     /* font */
-    font-family: 'GulimChe', sans-serif;
     font-size: 2rem;
     font-weight: 400;
     font-style: normal;
