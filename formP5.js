@@ -35,7 +35,7 @@ function setup() {
     introCopy.position(500,200);
 
     //bg
-    var bgString = "hsl("+random(280,340)+","+random(80,100)+"%,"+20+"%)"
+    var bgString = "hsl("+random(120,240)+","+random(80,100)+"%,"+20+"%)"
     $("html").css("background-color", bgString);
 
     //bounce
