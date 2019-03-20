@@ -95,6 +95,7 @@ input {
 }
 
 .cBox input {
+    font-family: 'Nanum Gothic Coding', monospace;
     padding: 0px;
     margin: 0px;
     height: auto;
