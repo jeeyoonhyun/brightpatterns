@@ -25,7 +25,7 @@ function setup() {
     canvas.style('z-index','-1');
 
     // create input
-    p5field = createInput('enter text');
+    p5field = createInput('C15jk');
     p5field.class('aTarget')
     main();
 
