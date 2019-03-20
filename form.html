@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>결제 정보 입력</title>
+        <link rel="stylesheet" href="form.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+        <script src = "formP5.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <p class = "intro">
+            <span class="et">개</span><span class="et">인</span><span class="et">정</span><span class="et">보</span><span class="et">를</span>
+             <span class="et">입</span><span class="et">력</span><span class="et">해</span> <span class="et">주</span><span class="et">십</span>
+             <span class="et">시</span><span class="et">오</span><span class="et">.</span>
+        </p>
+        <div class = "inputs">
+            <form action = "result.html">
+                <p class = "cBox">
+                    <input class = "checkCbox checkTarget" type = "checkbox" id = "ch1" checked> 이용약관을 모두 읽어보았으며 동의합니다.
+                </p>
+                <p class = "cBox">
+                    <input class = "checkCbox checkTarget" type = "checkbox" id = "ch2" checked> 제3자 개인정보 제공에 동의합니다. (선택)
+                </p>
+                <p class = "cBox">
+                        <input class = "checkCbox checkTarget" type = "checkbox" id = "ch1" checked> 개인정보 수집 및 이용에 동의합니다. (필수)
+                </p>
+                <p class = "cBox">
+                    <input class = "checkCbox checkTarget" type = "checkbox" id = "ch2" checked> 이벤트 및 서비스안내 메시지 수신에 동의합니다. (필수)
+                </p>
+                <p class = "aP">
+                    <input class ="checkInput aTarget" type = "text" id = "a1" value = "Jeeyoon">
+                    <input class ="checkInput aTarget" type = "text" id = "a2" value = "Hyun">           
+                </p>
+
+                <p class = "bP">
+                    <input class ="checkInput bTarget" type = "text" id = "b1" value = "1234">
+                    <input class ="checkInput bTarget" type = "text" id = "b2" value = "5678">
+                    <input class ="checkInput bTarget" type = "text" id = "b3" value = "9012">
+                    <input class ="checkInput bTarget" type = "text" id = "b4" value = "3456">
+                </p>
+
+                <p class = "cP">
+                    <input class ="checkInput cTarget" type = "password" id = "c1" value = "c1c">
+                    <input class ="checkInput cTarget" type = "text" id = "c2" value = "07">
+                    <input class ="checkInput cTarget" type = "text" id = "c3" value = "24">
+                </p>
+
+                <p class = "dP">
+                    <input class ="checkInput dTarget" type = "text" id = "d1" value = "home sweet home">
+                    <input class ="checkInput dTarget" type = "text" id = "d2" value = "somewhere city somewhere country">
+                </p>
+                <!-- <p>
+                    <input type = "reset">
+                </p> -->
+                <p><input type = "submit"></p>
+             </form>
+        </div>
+        
+        <script src = "form.js"></script>
+    </body>
+</html>

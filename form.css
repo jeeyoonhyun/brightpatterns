@@ -1,0 +1,101 @@
+body {
+    overflow:hidden;
+}
+.aTarget {
+    width: 300px;
+}
+.intro {
+    font-family: 'GulimChe', sans-serif;
+    font-size: 3rem;
+    color: #000000;
+}
+input {
+    transition: all 1s;
+    /* font */
+    font-family: 'GulimChe', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    text-align: left;
+
+    /* block */
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 16px;
+    height: 100px;
+    border: solid 4px #000000;
+    background-color: #FFFFFF;
+}   
+
+#a1 {
+    width:600px;
+    
+    left: 40px;
+    top: 40px;
+}
+#a2 {
+    width:460px;
+    
+    left: 40px;
+    top: 190px;
+}
+.bTarget {
+    width:100px;
+}
+#b1 {
+    
+}
+#b2 {
+
+}
+#b3 {
+    
+}
+#b4 {
+    
+}
+
+#c1 {
+    width:90px;
+    margin-right: 230px;
+}
+#c2 {
+    width:80px;
+    margin-right:10px;
+}
+.slash {
+    display:inline-block;
+}
+#c3 {
+    width:80px;
+}
+
+.dTarget {
+    width: 32%;
+    display:block;
+}
+#d1 {
+    width:960px;
+    
+    left: 40px;
+    top: 640px; 
+}
+#d2 {
+    width: 32%;
+}
+
+.cBox {
+    padding: 0px;
+    margin: 0px;
+}
+
+.cBox input {
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    transform: scale(4);
+}
