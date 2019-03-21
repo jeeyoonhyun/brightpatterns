@@ -1,5 +1,6 @@
 var brightCount = 0;
 
+var palette = ["71, 79%, 69%", "168, 20%, 85%", "149, 49%, 83%", "8, 52%, 89%", "11, 93%, 64%"];
 
 function unEnter(target) {
     $(target).keydown(function(e) {
@@ -18,7 +19,8 @@ function unEnter(target) {
                 if (that.val() == "") {
                     that.hide();
                     brightCount += 1;
-                    var bgString = "hsl("+random(280,340)+","+random(80,100)+"%,"+(20+2*brightCount)+"%)"
+                    var bgString = "hsl(" + palette[Math.floor(Math.random()*palette.length)] +")";
+                    // var bgString = "hsl("+random(280,340)+","+random(80,100)+"%,"+(20+2*brightCount)+"%)"
                     $("html").css("background-color", bgString);
                 }
             }, 1);
