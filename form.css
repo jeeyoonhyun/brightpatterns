@@ -27,19 +27,19 @@ input {
     padding: 20px;
     margin: 20px;
     border-radius: 16px;
-    height: 100px;
+    height: 40px;
     border: solid 4px #000000;
     background-color: #FFFFFF;
 }   
 
 #a1 {
-    width:600px;
+    width:500px;
     
     left: 40px;
     top: 40px;
 }
 #a2 {
-    width:460px;
+    width:400px;
     
     left: 40px;
     top: 190px;

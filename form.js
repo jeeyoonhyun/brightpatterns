@@ -1,6 +1,6 @@
 var brightCount = 0;
 
-var palette = ["71, 79%, 69%", "168, 20%, 85%", "149, 49%, 83%", "8, 52%, 89%", "11, 93%, 64%"];
+var palette = ["71, 79%, 89%", "168, 20%, 85%", "149, 49%, 83%", "8, 52%, 89%", "11, 93%, 74%"];
 
 function unEnter(target) {
     $(target).keydown(function(e) {
