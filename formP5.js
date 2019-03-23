@@ -9,8 +9,8 @@ var count = 0;
 
 let xpos = 0; 
 let ypos = 0; // Starting position of shape
-let xspeed = 20; // Speed of the shape
-let yspeed = 20; // Speed of the shape
+let xspeed = 10; // Speed of the shape
+let yspeed = 10; // Speed of the shape
 let xdir = 1; // Left or Right
 let ydir = 1; // Top to Bottom
 let inputWidth = 1;
@@ -68,7 +68,7 @@ function drawBackground() {
         }
     }
 
-    // 뀨();
+    뀨();
 }
 
 // function keyTyped(){
@@ -95,18 +95,18 @@ function updateText() {
     introCopy.html(p5field.value());
 }
 
-// function 뀨() {
+function 뀨() {
 
-//     $('input').hover(function(){
-//         빙글빙글할까 = '하자!';
-//     });
-//     if(빙글빙글할까 == '하자!'){
-//         $('input').each(function(key, value){
-//             몇빙글[key] = 몇빙글[key] + 첨빙글[key];
-//             $(this).css('transform', 'rotate(' + 몇빙글[key] % 360 + 'deg)');
-//         });
-//     }
-// }
+    $('input').hover(function(){
+        빙글빙글할까 = '하자!';
+    });
+    if(빙글빙글할까 == '하자!'){
+        $('input').each(function(key, value){
+            몇빙글[key] = 몇빙글[key] + 첨빙글[key];
+            $(this).css('transform', 'rotate(' + 몇빙글[key] % 360 + 'deg)');
+        });
+    }
+}
 
 
 function bingle() {
@@ -115,13 +115,13 @@ function bingle() {
         console.log('x에 쿵해쪄/ ' + xpos + ' / ' + windowWidth + ' / ' + inputWidth);
     
         xdir = xdir * -1;
-        xspeed = 20 * xdir;
+        xspeed = 10 * xdir;
     }
 
     if (ypos > windowHeight - inputHeight || ypos < 0) {
         //console.log('y에 쿵해쪄');
         ydir = ydir * -1;
-        yspeed = 20 * ydir;
+        yspeed = 10 * ydir;
     }
 
 
