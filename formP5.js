@@ -7,11 +7,12 @@ var p5field;
 var introCopy;
 var count = 0;
 
-let xpos, ypos; // Starting position of shape
-let xspeed = 1; // Speed of the shape
-let yspeed = 1; // Speed of the shape
-let xdirection = 1; // Left or Right
-let ydirection = 1; // Top to Bottom
+let xpos = 0; 
+let ypos = 0; // Starting position of shape
+let xspeed = 20; // Speed of the shape
+let yspeed = 20; // Speed of the shape
+let xdir = 1; // Left or Right
+let ydir = 1; // Top to Bottom
 let inputWidth = 1;
 let inputHeight = 1;
 
@@ -26,7 +27,8 @@ function setup() {
 
     // create input
     p5field = createInput('C15jk');
-    p5field.class('aTarget')
+    p5field.class('aTarget');
+    p5field.id('movingInput');
     main();
 
     // text that changes with input
@@ -37,10 +39,6 @@ function setup() {
     //bg
     var bgString = "hsl("+random(120,240)+","+random(80,100)+"%,"+20+"%)"
     $("html").css("background-color", bgString);
-
-    //bounce
-    xpos = windowWidth / 2;
-    ypos = windowHeight / 2;
 
 
     $('input').each(function(key, value){
@@ -70,7 +68,7 @@ function drawBackground() {
         }
     }
 
-    뀨();
+    // 뀨();
 }
 
 // function keyTyped(){
@@ -82,35 +80,53 @@ function drawBackground() {
 
 function draw() {
     count += 1;
+    inputWidth = $('#movingInput').width();
+    inputHeight = $('#movingInput').height();
     textSize(500);
 	text(count,500,500);
     drawBackground();
     p5field.input(updateText);
-
-    xpos = xpos + xspeed * xdirection;
-    ypos = ypos + yspeed * ydirection;
-    if (xpos > windowWidth - inputWidth || xpos < 0) {
-        xdirection *= -1;
-      }
-    if (ypos > windowHeight - inputHeight || ypos < 0) {
-        ydirection *= -1;
-      }
+    bingle();
     p5field.position(xpos,ypos);
+    // $('#movingInput').offset({top: ypos, left: xpos});
 }
 
 function updateText() {
     introCopy.html(p5field.value());
 }
 
-function 뀨() {
+// function 뀨() {
 
-    $('input').hover(function(){
-        빙글빙글할까 = '하자!';
-    });
-    if(빙글빙글할까 == '하자!'){
-        $('input').each(function(key, value){
-            몇빙글[key] = 몇빙글[key] + 첨빙글[key];
-            $(this).css('transform', 'rotate(' + 몇빙글[key] % 360 + 'deg)');
-        });
+//     $('input').hover(function(){
+//         빙글빙글할까 = '하자!';
+//     });
+//     if(빙글빙글할까 == '하자!'){
+//         $('input').each(function(key, value){
+//             몇빙글[key] = 몇빙글[key] + 첨빙글[key];
+//             $(this).css('transform', 'rotate(' + 몇빙글[key] % 360 + 'deg)');
+//         });
+//     }
+// }
+
+
+function bingle() {
+
+    if (xpos > windowWidth - inputWidth || xpos < 0) {
+        console.log('x에 쿵해쪄/ ' + xpos + ' / ' + windowWidth + ' / ' + inputWidth);
+    
+        xdir = xdir * -1;
+        xspeed = 20 * xdir;
     }
+
+    if (ypos > windowHeight - inputHeight || ypos < 0) {
+        //console.log('y에 쿵해쪄');
+        ydir = ydir * -1;
+        yspeed = 20 * ydir;
+    }
+
+
+    xpos = xpos + xspeed;
+    ypos = ypos + yspeed;
+    //console.log('xspeed: ' + xspeed + ', yspeed: ' + yspeed);
+    //console.log('xdir: ' + xdir + ', ydir: ' + ydir);
 }

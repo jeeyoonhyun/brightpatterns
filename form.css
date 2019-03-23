@@ -1,7 +1,7 @@
 body {
     overflow:hidden;
     font-family: 'Nanum Gothic Coding', monospace;
-    transform: scale(1.5);
+    transform: scale(1);
 }
 .aTarget {
     width: 300px;
